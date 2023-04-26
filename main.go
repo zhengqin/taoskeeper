@@ -20,8 +20,7 @@ import (
 )
 
 func main() {
-	fmt.println("helloHello")
-	fmt.println("worldWorld")
+
 	conf := config.InitConfig()
 	router := web.CreateRouter(conf.Debug, &conf.Cors, false)
 	reporter := api.NewReporter(conf)
@@ -60,4 +59,5 @@ func main() {
 
 	<-shutdown
 	logger.Warn("stop server")
+	logger.Warn("HAHAHAHAHAHAHAHAHAHAHAHA")
 }
